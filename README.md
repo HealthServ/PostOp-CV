@@ -1,10 +1,16 @@
 # PostOp Pose Tracking
 
+> This project is a part of the submission for the [Future of Healthcare Hackathon](https://futureofhealthcare.devpost.com/) by Datavant
+
 This project tracks your position and movement during exercise to provide corrective feedback. 
 
 ## Technical Implementation
 
 The system was implemented using Python with the `opencv-python` and `mediapipe` libraries.
+
+MediaPipe takes an image of a person and generates the coordinates of 33 body parts, or landmarks, which can be used to run calculations on relative positions and drawn on the image.
+
+[![MediaPipe Landmark Model](./landmarks.png)](https://google.github.io/mediapipe/solutions/pose.html#pose-landmark-model-blazepose-ghum-3d)
 
 ## Examples
 
@@ -38,5 +44,7 @@ We see several applications for the use of this technology:
 With a pool of enough data, we could create trained AI models to give specific feedback on different types of workouts without having to hard-code comparisons between joint positions.
 
 ## Special Thanks
+
+To the organizers and judges of the [Future of Healthcare Hackathon](https://futureofhealthcare.devpost.com/) by Datavant. 
 
 To the authors of [OpenCV Python](https://docs.opencv.org/4.x/) and [MediaPipe Pose](https://google.github.io/mediapipe/solutions/pose)
