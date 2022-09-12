@@ -4,14 +4,6 @@
 
 This project tracks your position and movement during exercise to provide corrective feedback. 
 
-## Technical Implementation
-
-The system was implemented using Python with the `opencv-python` and `mediapipe` libraries.
-
-MediaPipe takes an image of a person and generates the coordinates of 33 body parts, or landmarks, which can be used to run calculations on relative positions and drawn on the image.
-
-[![MediaPipe Landmark Model](./landmarks.png)](https://google.github.io/mediapipe/solutions/pose.html#pose-landmark-model-blazepose-ghum-3d)
-
 ## Examples
 
 The system can tell if you are doing certain exercises correctly by comparing the position of each joint on the pose model.
@@ -31,6 +23,14 @@ A jumping jack is determined to be correct when the elbow's vertical position is
 ### Other Exercises
 
 Feedback for other exercises can be implemented on a case-by-case basis by comparing the positions of each joint.
+
+## Technical Implementation
+
+The system was implemented using Python with the `opencv-python` and `mediapipe` libraries.
+
+MediaPipe takes an image of a person and generates the coordinates of 33 body parts, or landmarks, which can be used to run calculations on relative positions and drawn on the image.
+
+[![MediaPipe Landmark Model](./landmarks.png)](https://google.github.io/mediapipe/solutions/pose.html#pose-landmark-model-blazepose-ghum-3d)
 
 ## Applications
 
